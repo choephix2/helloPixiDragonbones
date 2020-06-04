@@ -30,5 +30,14 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@pixi/constants": "^5.2.4",
+    "@pixi/core": "^5.2.4",
+    "@pixi/display": "^5.2.4",
+    "@pixi/math": "^5.2.4",
+    "@pixi/runner": "^5.2.4",
+    "@pixi/settings": "^5.2.4",
+    "@pixi/ticker": "^5.2.4",
+    "@pixi/utils": "^5.2.4"
+  }
 }
