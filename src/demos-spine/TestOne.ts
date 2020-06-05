@@ -9,12 +9,12 @@ export default class SpineBoyPro extends BaseDemo {
 	public constructor() {
     super();
 
-    const data = Loader.shared.resources["spine/spineboy-pro.json"].spineData;
+    const data = Loader.shared.resources["spine/raptor-pro.json"].spineData;
     const animation = new PIXI.spine.Spine( data );
     this.addChild(animation);
     
-    if (animation.state.hasAnimation('hoverboard')) {
-      animation.state.setAnimation(0, 'hoverboard', true);
+    if (animation.state.hasAnimation('run')) {
+      animation.state.setAnimation(0, 'run', true);
       animation.state.timeScale = 0.1;
     }
     
