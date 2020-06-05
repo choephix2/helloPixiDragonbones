@@ -1,6 +1,6 @@
 import { BaseDemo } from "../demos/BaseDemo";
 import dragonBones from "../lib/dragonBones";
-import { Loader } from "pixi.js";
+import { Loader } from "../pixi";
 
 window.PIXI = PIXI;
 import "../lib/pixi-spine";

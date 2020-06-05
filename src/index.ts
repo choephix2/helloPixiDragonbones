@@ -1,15 +1,18 @@
-import { settings, Application, PRECISION } from "pixi.js";
+//import { settings, Application, PRECISION } from "./pixi";
+import { Application } from "./pixi";
 //import { Main } from "./Main";
 import { Spiner } from "./Spiner";
 import Stats from "stats.js";
+
+declare module "./pixi";
 
 // Two constants to represent the ideal size of the game
 export const WIDTH = 1024;
 export const HEIGHT = 1024;
 
-settings.STRICT_TEXTURE_CACHE = true; //Forces you to load you stuff before using it
-settings.PRECISION_FRAGMENT = PRECISION.HIGH; //It says that this makes iOS looks better
-settings.ANISOTROPIC_LEVEL = 16;
+// settings.STRICT_TEXTURE_CACHE = true; //Forces you to load you stuff before using it
+// settings.PRECISION_FRAGMENT = PRECISION.HIGH; //It says that this makes iOS looks better
+// settings.ANISOTROPIC_LEVEL = 16;
 
 const app = new Application({
 	// forceCanvas: true,

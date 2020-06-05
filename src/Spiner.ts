@@ -1,4 +1,4 @@
-import { Container } from "pixi.js";
+import { Container } from "./pixi";
 import { Preloader } from "./core/Preloader";
 import { AnimationBase } from "./demos/AnimationBase";
 import { EyeTracking } from "./demos/EyeTracking";

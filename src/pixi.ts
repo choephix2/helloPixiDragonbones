@@ -7,7 +7,7 @@ import * as utils from '@pixi/utils';
 export { utils };
 export * from '@pixi/display';
 export * from '@pixi/core';
-export * from '@pixi/loaders';
+export { Loader } from '@pixi/loaders';
 export * from '@pixi/sprite';
 export * from '@pixi/app';
 
@@ -21,10 +21,10 @@ Renderer.registerPlugin('batch', BatchRenderer);
 // Application plugins
 import { Application } from '@pixi/app';
 import { AppLoaderPlugin } from '@pixi/loaders';
-Application.registerPlugin(AppLoaderPlugin);
+Application.registerPlugin( AppLoaderPlugin as any );
 
 import { TickerPlugin } from '@pixi/ticker';
-Application.registerPlugin(TickerPlugin);
+Application.registerPlugin( TickerPlugin );
 
 // window.PIXI = global.PIXI = PIXI;
 // import "pixi-spine";

@@ -1,4 +1,4 @@
-import { Container } from "pixi.js";
+import { Container } from "./pixi";
 import { Preloader } from "./core/Preloader";
 import dat from "dat.gui";
 import { HelloDragonBones } from "./demos/HelloDragonBones";

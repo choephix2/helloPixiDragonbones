@@ -10,6 +10,7 @@
     "noImplicitReturns": true,
     "noUnusedParameters": true,
     "noUnusedLocals": false,
+    "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     // Output and other settings
     "sourceMap": true, //Makes debugging waaay easier
@@ -24,7 +25,8 @@
       "src/types"
     ]
   },
-  "include": [
+  "include": [ 
+    "src/pixi.ts",
     "src/**/*.ts",
   ]
 }
